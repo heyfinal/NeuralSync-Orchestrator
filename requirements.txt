@@ -1,0 +1,16 @@
+# NeuralSync Orchestrator Dependencies
+
+# Core dependencies (automatically handled by NeuralSync v2)
+# fastapi>=0.115.0
+# uvicorn>=0.32.0
+# pydantic>=2.10.0
+
+# Optional CLI agent dependencies
+google-generativeai>=0.8.0  # For Gemini delegation
+urllib3<2.0                  # SSL compatibility fix for macOS
+
+# Development dependencies (optional)
+pytest>=7.0.0
+pytest-asyncio>=0.23.0
+black>=23.0.0
+flake8>=6.0.0
