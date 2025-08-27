@@ -41,13 +41,19 @@ python3 install.py
 ### Usage
 
 ```bash
-# Code tasks automatically delegated to codex
-echo "Write a Python web scraper" | claude-ns --print
-# → Delegates to codex, returns production-ready code
+# Launch claude-ns with NeuralSync context
+claude-ns
 
-# Research tasks automatically delegated to gemini  
-echo "Compare microservices vs monoliths" | claude-ns --print
-# → Delegates to gemini, returns comprehensive analysis
+# Natural conversation flow:
+"I need a Python web scraper that handles dynamic content and exports to multiple formats"
+# [Claude responds with normal analysis and planning]
+
+"ok that sounds good.. use the meta-ai-agent to start on that"
+# → meta-ai-agent activates with full conversation context
+# → Intelligently delegates coding tasks to codex
+# → Delegates research tasks to gemini  
+# → Executes tasks in parallel for faster results
+# → Maintains quality through validation and review
 
 # Complex tasks use hybrid delegation
 echo "Build a REST API with authentication and documentation" | claude-ns --print
